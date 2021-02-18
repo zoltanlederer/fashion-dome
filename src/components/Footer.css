@@ -1,0 +1,22 @@
+.footer{
+    background-color: #f2f6f5;
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 40px;
+    padding-bottom: 25px;
+}
+
+.footer a:link, .footer a:visited{
+    color: #000;
+    font-size: 1.3rem;
+    text-decoration: none;
+    padding: 20px;
+}
+
+.footer a:hover{
+    color: #999;
+}
+
+.footer p a:last-child{
+    font-size: .8rem;
+}

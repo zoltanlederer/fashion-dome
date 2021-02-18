@@ -1,0 +1,33 @@
+.nav-header{
+    margin: 20px;
+}
+
+.nav-header h1{
+    margin: 20px;
+    margin-bottom: 10px;
+}
+
+.nav-header h1 img{
+    width: 250px;
+}
+
+.nav-nav ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.nav-header button{
+    color: rgb(60, 76, 148);
+    background-color: transparent;
+    border: transparent;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.nav-header button:hover{
+    color: rgb(95, 111, 255);
+}

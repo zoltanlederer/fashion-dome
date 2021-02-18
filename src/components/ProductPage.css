@@ -1,0 +1,155 @@
+.product-page{
+    position: relative;
+}
+
+.product-page-list{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    list-style-type: none;
+    padding: 0;
+    color: #403C3C;
+}
+
+.product-img img{
+    width: 100%;
+    transition: all 1s;
+}
+
+.product-img img:hover{
+    border: 1px solid #403C3C;
+    transform: scale(1.3);
+    transition: all 1s;
+}
+
+.product-page-list-part1, 
+.product-page-list-part2,
+.product-page-list-part3{
+    border-top: 1px solid #999;
+    padding: 60px 0;
+}
+
+.product-page-list-part1{
+    grid-column: 2/4;
+    position: relative;
+}
+
+.product-page-list-part2{
+    grid-column: 4/6;
+}
+
+.product-page-list-part2 h2{
+    font-size: 1rem; 
+}
+
+.size, .qty{
+    font-size: .9rem;
+    padding: 9px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.size{
+    margin-right: 30px;
+}
+
+.product-page-list-part2 button{
+    border: 1px solid #000;
+    border-radius: 2px;
+    background-color: #fff;
+    color: #3D3D3D;
+    font-size: .75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 15px 25px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.product-page-list-part2 button:hover{
+    border: 1px solid #ccc;
+    color: #999;
+    transition: all 1s;
+}
+
+.product-page-btn-disabled{
+    border-color: #ccc !important;;
+    color: #999 !important;;
+}
+
+.product-page-list-part3{
+    grid-column: 2/6;
+}
+
+.product-page-list-part3 h1{
+    font-size: 1.1rem;
+    text-decoration: underline;
+}
+
+.product-page-list-part3 h2{
+    font-size: 1rem;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.product-page-list-part3-information{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-page-list-part3-information div:nth-child(1) {
+    margin-right: 100px;
+}
+
+.product-page-list-stock{
+    font-size: .8rem;
+    color: #00800D;
+}
+
+.product-page-sale{
+    color: #fff;
+    background-color: #ff0000;
+    top: 60px;
+    left: -12px;
+    padding: 0px 15px;
+    text-transform: uppercase;
+    transform: rotate(-45deg);
+    line-height: 35px;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    position: absolute;
+}
+
+.alert {
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+    width: 300px;
+    height: 50px;
+    position: absolute;
+    top: 100px;
+    bottom: 0;
+    left: 300px;
+    right: 300px;
+}
+  
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: black;
+}
+
+.myAlert {
+    font-size: 8em;
+}
