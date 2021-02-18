@@ -1,3 +1,3 @@
-# Getting Started with Create React App
+# Fashion Dome e-commerce website
 
 Simple e-commerce website built with React
