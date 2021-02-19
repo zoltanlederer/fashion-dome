@@ -65,3 +65,32 @@
     letter-spacing: 1px;
     position: absolute;
 }
+
+
+@media all and (max-width: 750px) {
+    .product:nth-child(2n+1){
+        grid-column: 2 / 4;
+    }
+
+    .product{
+        grid-column: 4 / 6;
+    }
+}
+
+@media all and (max-width: 370px) {
+    .product{
+        grid-column: 2 / 6;
+    }
+
+    .product:nth-child(2n+1){
+        grid-column: 2 / 6;
+    }
+
+    .product:nth-child(4n+1){
+        grid-column: 2 / 6;
+    }
+
+    .product-item img{
+        width: 75%;
+    }
+}

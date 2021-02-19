@@ -22,6 +22,16 @@
     cursor: pointer;
 }
 
+
+.header-small a{
+    color: rgb(60, 76, 148);
+    text-decoration: none;
+}
+
+.header-small a:hover{
+    color: rgb(95, 111, 255);
+}
+
 .header-small-left{
     grid-column: 2 / 4;
     justify-self: left;
@@ -36,3 +46,19 @@
     width: 100%;   
 }
 
+
+@media all and (max-width: 750px) {
+    .header-small-left{
+        grid-column: 2 / 6;
+    }
+
+    .header-small-right{
+        grid-column: 2 / 6;
+    }
+}
+
+@media all and (max-width: 370px) {
+    .header div h1{
+        font-size: 1rem;
+    }
+}

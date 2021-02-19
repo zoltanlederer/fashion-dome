@@ -1,8 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Nav.css';
 import { Link } from 'react-router-dom';
 
 const Nav = ({onPageChange, subPage, scrollTo}) => {
+
+    // style={{color: "red"}}
+
+    const [navToggle, setNavToggle] = useState(true)
+
+    let toggleBtn = navToggle ? 'nav-list nav-list-none' : 'nav-list nav-list-display';
+
+    console.log(navToggle)
+
+    // const navBarStyle = {
+    //   color: 'red'
+    // };
+
     return (
       <header className="nav-header">
         <div>
@@ -22,7 +35,8 @@ const Nav = ({onPageChange, subPage, scrollTo}) => {
           </h1>
         </div>
         <nav className="nav-nav">
-          <ul>
+          <button className="nav-toggle" onClick={() => setNavToggle(!navToggle)} /* style={navBarStyle} */ ><i className="fas fa-bars "></i></button>
+          <ul className={toggleBtn}>
             <li>
             <Link to='/'>
               <button
@@ -30,6 +44,7 @@ const Nav = ({onPageChange, subPage, scrollTo}) => {
                   onPageChange({ page: "main" });
                   subPage("");
                   scrollTo('stop');
+                  setNavToggle(!navToggle);
                 }}
               >
                 Home
@@ -42,6 +57,7 @@ const Nav = ({onPageChange, subPage, scrollTo}) => {
                 onClick={() => {
                   onPageChange({ page: "about" });
                   subPage("");
+                  setNavToggle(!navToggle);
                 }}>About Us</button>
             </Link>
             </li>
@@ -51,12 +67,17 @@ const Nav = ({onPageChange, subPage, scrollTo}) => {
                 onClick={() => {
                   onPageChange({ page: "contact" });
                   subPage("");
+                  setNavToggle(!navToggle);
                 }}>Contact Us</button>
             </Link>
             </li>
             <li>
             <Link to='/cart'>
-              <button onClick={() => onPageChange({ page: "shoppingCart" })}>
+              <button onClick={() => { 
+                onPageChange({ page: "shoppingCart" })
+                setNavToggle(!navToggle);
+                }}
+              >
                 <i className="fas fa-shopping-cart"></i>
                 &nbsp;Shopping Cart
               </button>

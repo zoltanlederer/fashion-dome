@@ -153,3 +153,14 @@
 .myAlert {
     font-size: 8em;
 }
+
+
+@media all and (max-width: 510px) {
+    .product-page-list-part1{
+        grid-column: 2/6;
+    }
+
+    .product-page-list-part2{
+        grid-column: 2/6;
+    }
+}
