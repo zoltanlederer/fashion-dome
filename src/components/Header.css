@@ -46,6 +46,11 @@
     width: 100%;   
 }
 
+@media all and (max-width: 870px) {
+    .header div h1{
+        font-size: 1.2rem;
+    }
+}
 
 @media all and (max-width: 750px) {
     .header-small-left{

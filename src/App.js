@@ -103,7 +103,7 @@ const App = () => {
 
     if (item === 'All'){
       console.log('item');
-      alert('This website is for demonstration purpose');
+      alert('This website is only for demonstration purpose');
       setCart([]);
     }
   };

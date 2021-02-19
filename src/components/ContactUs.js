@@ -43,7 +43,7 @@ class ContactUs extends Component {
 					</div>
 
 					<div className="form-button">
-						<input type="button" value="Send" id="form-button" name="form-button" onClick={() => alert('This website is only a presentation')} />
+						<input type="button" value="Send" id="form-button" name="form-button" onClick={() => alert('This website is only for demonstration purpose')} />
 					</div>
 				</form>
 			</div>
