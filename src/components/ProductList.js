@@ -31,9 +31,7 @@ const ProductList = ({onPageChange, category, scrollDown}) => {
                   {category === "" ?
                   <Link to={`shopping/${product.category}/${product.itemCode}`}>  
                     <img
-                      // src={`${process.env.PUBLIC_URL}/images/${product.image}`}
-                      // src={`${process.env.PUBLIC_URL}/images/${product.image}`}
-                      src={`/images/${product.image}`}
+                      src={`${process.env.PUBLIC_URL}/images/${product.image}`}
                       alt={product.brand}
                       onClick={() => (
                         console.log('click'),
@@ -44,8 +42,7 @@ const ProductList = ({onPageChange, category, scrollDown}) => {
                     :
                   <Link to={`${product.category}/${product.itemCode}`}>
                     <img
-                      // src={`${process.env.PUBLIC_URL}/images/${product.image}`}
-                      src={`/images/${product.image}`}
+                      src={`${process.env.PUBLIC_URL}/images/${product.image}`}
                       alt={product.brand}
                       onClick={() => (
                         onPageChange({ page: "product", id: product.itemCode })
