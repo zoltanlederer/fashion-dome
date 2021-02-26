@@ -9,7 +9,7 @@ const Footer = () => {
             <a href='https://www.twitter.com' target='_blank' rel='noreferrer'><i className="fab fa-twitter"></i></a>
             <a href='https://www.pinterest.com' target='_blank' rel='noreferrer'><i className="fab fa-pinterest-p"></i></a>
             <p>
-                <a href='https://zoltan.tech' target='_blank' rel='noreferrer'>Created by zoltan.tech</a>
+                <a href='https://zoltanlederer.com' target='_blank' rel='noreferrer'>Created by zoltanlederer.com</a>
             </p>
         </footer>
     );
